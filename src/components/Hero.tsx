@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Download, Linkedin, Github, Award, User } from 'lucide-react';
+import { Mail, Phone, Download, Linkedin, Github, Award } from 'lucide-react';
 
 export function Hero() {
   const socialLinks = [
@@ -34,15 +34,17 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 animate-fade-in-up">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 to-teal-500 p-1">
-            <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <User className="w-16 h-16 text-gray-500 dark:text-gray-400" />
-            </div>
+            <img
+              src="/main.jpg"
+              alt="Sai Supraja Dharani"
+              className="w-full h-full rounded-full object-cover border-4 border-white dark:border-gray-800"
+            />
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
             Sai Supraja Dharani
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
             Aspiring Developer | Machine Learning Enthusiast
           </p>
@@ -67,10 +69,14 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-105">
+            <a
+              href="/sai%20supraja.pdf"
+              download
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
               <Download className="w-5 h-5" />
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
 
